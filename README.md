@@ -1,3 +1,5 @@
+Link to show: https://ts-react-vite-tables.datamax.pp.ua/
+
 # technical task | EN
 
 Technology Stack: React | Vite | TypeScript
