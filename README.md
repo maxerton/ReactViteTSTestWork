@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
+# technical task | EN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technology Stack: React | Vite | TypeScript
 
-Currently, two official plugins are available:
+Task.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Create a web application with the following hierarchical structure of pages (tables):
+Accounts => Profiles => Campaigns
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
+Table [Accounts] {
+"accountId", "email", "authToken", "creationDate"
 }
-```
+Table [Profiles of selected account] {
+"profileId", "country", "marketplace"
+}
+Table [Campaigns of selected profile] {
+"campaignId", "clicks", "cost", "date"
+}
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3 clickable tables that, when you click on one of the rows, move to the selected entity by structure.
+Implement sorting, filtering and pagination for each of the tables.
+
+You can use Bootstrap modules for page/table design.
+Set the data set with constants in the code. (or use any methods of simulating data output from the backend)
+Any initiatives to add functionality to the application are welcome.
+
+
+
+# Технічне завдання | UA
+
+
+Стек технологій: React | Vite | TypeScript
+
+Завдання.
+
+Створити веб-застосунок із такою ієрархічною структурою сторінок(таблиць):
+Accounts => Profiles => Campaigns
+
+Table [Accounts] {
+"accountId", "email", "authToken", "creationDate"
+}
+Table [Profiles of selected account] {
+"profileId", "country", "marketplace"
+}
+Table [Campaigns of selected profile] {
+"campaignId", "clicks", "cost", "date"
+}
+
+3 клікабельні таблиці, які при кліку по одному з рядків - переходять по структурі у вибрану entity.
+Реалізувати сортування, фільтрування та пагінацію до кожної з таблиць.
+
+Можна використовувати Bootstrap модулі для дизайну сторінок/таблиць.
+Набір даних задати константами в коді. (або використати будь-які методи імітування виводу даних із бекенду)
+Будь-які проявлені ініціативи по додавання функціоналу в застосунок - вітаються.
