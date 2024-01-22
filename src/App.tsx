@@ -13,21 +13,25 @@ function App() {
 
   return (
     <>
-    <Navbar sticky='top' bg={theme ? 'primary' : 'info'} className='text-black' expand='sm'>
-      <Container>
-        <Navbar.Brand href="#">React Bootstrap Vite App</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-          </Nav>
-          <Nav>
-            <Button variant='' onClick={() => setTheme(!theme)}><FontAwesomeIcon icon={faCircleHalfStroke} /></Button>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      <Navbar sticky='top' bg={theme ? 'primary' : 'info'} className='text-black' expand='sm'>
+        <Container>
+          <Navbar.Brand href="#">React Bootstrap Vite App</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+            </Nav>
+            <Nav>
+              <Button variant='' onClick={() => setTheme(!theme)}><FontAwesomeIcon icon={faCircleHalfStroke} /></Button>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <Container>
         <Main></Main>
+      </Container>
+      <Container className='mt-5 p-5 d-flex justify-content-center'>
+        <p>Copyright &copy; 2024</p>
+        <p><a target='_blank' href="https://github.com/maxerton/ReactViteTSTestWork">Github</a></p>
       </Container>
     </>
   )
